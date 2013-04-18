@@ -1,11 +1,48 @@
 source 'http://rubygems.org'
 
-gem 'rails', '3.0.20'
+gem 'rails', '3.2.13'
 
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3', :require => 'sqlite3'
+gem 'sqlite3-ruby', :require => 'sqlite3'
+
+group :assets do
+  gem 'sass-rails',   '~> 3.2.3'
+  gem 'coffee-rails', '~> 3.2.1'
+  gem 'bootstrap-sass', '~> 2.2.2.0'
+
+  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # gem 'therubyracer', :platforms => :ruby
+
+  gem 'uglifier', '>= 1.0.3'
+end
+
+gem 'carrierwave'
+gem 'jquery-rails'
+gem 'kaminari'
+gem 'kaminari-bootstrap'
+
+gem 'sorcery'
+
+group :development do
+  gem 'better_errors'
+  gem 'pry-rails'
+  gem 'letter_opener'
+end
+
+group :tools do
+  gem 'rb-fsevent', :require => false 
+  gem 'guard-test'
+  gem 'guard-livereload'
+end
+
+group :test do 
+    gem "factory_girl_rails"
+    gem "database_cleaner"
+    gem "capybara"
+    gem "capybara-webkit"
+end
 
 # Use unicorn as the web server
 # gem 'unicorn'

@@ -4,6 +4,7 @@ html, body {
   font-family: Helvetica, "Lucida Grande", Arial, Georgia, sans-serif;
   font-size: 16px;
   line-height: 1.5em;
+  background-image:url('http://i.imgur.com/GwlWpDZ.jpg');
 }
 a {
   color: #27B;
@@ -30,9 +31,11 @@ a {
 }
 
 #footer {
-  margin: 30px 0;
-  border-top: 1px solid #CCC;
-  font-size: 13px;
+ clear: both;
+ position: fixed;
+ z-index: 10;
+ height: 3em;
+ margin-top: -3em;
 }
 
 .listing {
